@@ -2,7 +2,7 @@
 
 "use client"
 
-import { useState  , useEffect} from "react"
+import { useState  , useEffect , Suspense} from "react"
 
 import { useRouter , useSearchParams } from "next/navigation"
 import Form from "@/components/Form"
@@ -70,4 +70,10 @@ const Editprompt = () => {
   )
 }
 
-export default Editprompt
+const EditPromptPage = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <Editprompt />
+  </Suspense>
+);
+
+export default EditPromptPage;
