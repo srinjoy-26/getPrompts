@@ -27,6 +27,7 @@ const Promptcard = ({post  , handleClick , handleEdit , handleDelete }) => {
     }
   }
   
+  
 
   return (
     <div className="shadow-lg w-full md:w-[360px] rounded-md flex flex-col gap-4 p-3 ">

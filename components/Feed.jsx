@@ -25,7 +25,7 @@ const Feed = () => {
     setSearchText(tag)
   }
 
-  
+  console.log(post)
   return (
     <>
     <div className="feed ">
