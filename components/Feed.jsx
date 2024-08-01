@@ -12,10 +12,11 @@ const Feed = () => {
       const data = await Response.json();
 
       setPost(data)
+      console.log(post)
     }
 
     fetchPost()
-  },[])
+  },[post])
 
   const HandleSearch = (e) =>{
      setSearchText(e.target.value)
