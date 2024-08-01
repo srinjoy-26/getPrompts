@@ -12,7 +12,7 @@ const Feed = () => {
       const data = await Response.json();
 
       setPost(data)
-      console.log(post)
+    
     }
 
     fetchPost()

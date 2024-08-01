@@ -40,6 +40,7 @@ const MyProfile = () => {
        const filteredposts = posts.filter((post) => post._id !== p._id)
 
        setPosts(filteredposts)
+       router.refresh();
 
 
      }catch(err){
