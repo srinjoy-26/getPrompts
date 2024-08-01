@@ -25,7 +25,7 @@ const Feed = () => {
     setSearchText(tag)
   }
 
-  console.log(post)
+  
   return (
     <>
     <div className="feed ">
@@ -43,7 +43,7 @@ const Feed = () => {
       
     </div>
 
-    <div className="mt-16 flex gap-3 w-full flex-col justify-start items-center lg:flex-row lg:items-start lg:flex-wrap pb-6">
+    <div className="mt-16 flex gap-3 w-full flex-col justify-center items-center lg:flex-row lg:items-start lg:flex-wrap pb-6">
          {post.filter((p)=> {
             if(searchText === ''){
               return p
